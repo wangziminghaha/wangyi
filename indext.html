@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+            background-color: #f6f7fb;
+        }
+        *{
+            margin: 0;padding: 0;
+        }
+        .box{
+            width: 85%;
+            margin: 20px auto;
+        }
+        .box1{
+            margin-top: 20px;
+            width: 300px;
+            background-color: #fff;
+            height: 320px;
+            margin-right: 10px;
+            float: left;
+            overflow: hidden;
+        }
+        .box2{
+            width: 930px;
+            margin-left: 115px;
+        }
+        .tou{
+            width: 800px;
+            border-left: 2px solid red;
+        }
+        p{
+            display: inline-block;
+            font-size: 20px;
+        }
+        .tou .yi{
+            float: right;
+            overflow: hidden;
+            font-size: 13px;
+            position: relative;
+            left: 117px;
+        }
+        .tou .er{
+            float: right;
+            overflow: hidden;
+            position: relative;
+            left: 117px;
+            background: url("imgs/index_z_7005ec6.png") no-repeat -17px -37px;
+        }
+        h1{
+            padding-top: 10px;
+            font-size: 18px;
+        }
+        h5{
+            width: 260px;
+            font-size: 14px;
+            color: #cccccc;
+            font-weight: 200;
+            border-bottom: 1px solid #cccccc;
+            position: relative;
+            left: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        .san{
+            float: right;
+            overflow: hidden;
+            padding: 10px 18px 10px 10px;
+            color: #cccccc;
+            font-size: 13px;
+        }
+        .san:hover{
+            color: red;
+        }
+        .boxys{
+            border-left: 2px solid red;
+            position: relative;
+            left: -365px;
+            top: -390px;
+            float: right;
+            overflow: hidden;
+        }
+        .box3{
+             width: 300px;
+             height: 658px;
+             border-left: 1px solid #cccccc;
+             border-top: 1px solid #cccccc;
+             border-right: 1px solid #cccccc;
+            border-bottom: 1px solid #cccccc;
+             float: right;
+             overflow: hidden;
+             position: relative;
+             left: -60px;
+             top: -320px;
+         }
+        .box4{
+            width: 300px;
+            height: 131px;
+            border-bottom: 1px solid #cccccc;
+        }
+        .box4 ul li{
+             padding: 20px;
+            float: left;
+            overflow: hidden;
+
+        }
+        h2{
+            font-size: 18px;
+        }
+        h3{
+            font-size: 13px;
+            color: #cccccc;
+            font-weight: 200;
+        }
+        .si{
+            background: url("imgs/index_z_7005ec6.png")no-repeat -37px -18px;
+        }
+        .box4:hover{
+            background-color: #e4e6eb;
+        }
+        .dui{
+            position: relative;
+            top: 45px;
+            left: 15px;
+            background: url("imgs/gt_ba10da4.png")no-repeat;
+        }
+        .dui:hover{
+            background: url("imgs/gt_h_9a26a75.png")no-repeat;
+        }
+        .box5:hover{
+            opacity: 1;
+            transform: translateY(172px);
+        }
+        .box5{
+            background: url("imgs/2455101e-9bb5-4071-9c49-34907b98b287.png")no-repeat ;
+            /*background-position-y: -170px;*/
+            width: 300px;
+            height: 340px;
+            position: absolute;
+            /*border: 1px solid black;*/
+            left: 114px;
+            top: -85px;
+            transition: all 0.6s linear;
+            opacity: 0;
+        }
+        .box6{
+            background: url("imgs/2455101e-9bb5-4071-9c49-34907b98b287.png")no-repeat ;
+            /*background-position-y: -170px;*/
+            width: 300px;
+            height: 340px;
+            position: absolute;
+            /*border: 1px solid black;*/
+            left: 425px;
+            top: -85px;
+            transition: all 0.6s linear;
+            opacity: 0;
+        }
+        .box6:hover{
+            opacity: 1;
+            transform: translateY(172px);
+        }
+        .box7{
+             background: url("imgs/2455101e-9bb5-4071-9c49-34907b98b287.png")no-repeat ;
+             /*background-position-y: -170px;*/
+             width: 300px;
+             height: 340px;
+             position: absolute;
+             /*border: 1px solid black;*/
+             left: 736px;
+             top: -85px;
+             transition: all 0.6s linear;
+             opacity: 0;
+         }
+        .box7:hover{
+            opacity: 1;
+            transform: translateY(172px);
+        }
+        .box8{
+            background: url("imgs/2455101e-9bb5-4071-9c49-34907b98b287.png")no-repeat ;
+            /*background-position-y: -170px;*/
+            width: 300px;
+            height: 340px;
+            position: absolute;
+            /*border: 1px solid black;*/
+            left: 114px;
+            top: 254px;
+            transition: all 0.6s linear;
+            opacity: 0;
+        }
+        .box8:hover{
+            opacity: 1;
+            transform: translateY(172px);
+        }
+        .box9{
+            background: url("imgs/2455101e-9bb5-4071-9c49-34907b98b287.png")no-repeat ;
+            /*background-position-y: -170px;*/
+            width: 300px;
+            height: 340px;
+            position: absolute;
+            /*border: 1px solid black;*/
+            left: 425px;
+            top: 254px;
+            transition: all 0.6s linear;
+            opacity: 0;
+        }
+        .box9:hover{
+            opacity: 1;
+            transform: translateY(172px);
+        }
+        .box10{
+            background: url("imgs/2455101e-9bb5-4071-9c49-34907b98b287.png")no-repeat ;
+            /*background-position-y: -170px;*/
+            width: 300px;
+            height: 340px;
+            position: absolute;
+            /*border: 1px solid black;*/
+            left: 736px;
+            top: 254px;
+            transition: all 0.6s linear;
+            opacity: 0;
+        }
+        .box10:hover{
+            opacity: 1;
+            transform: translateY(172px);
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+<div class="tou">
+    <p>&nbsp;&nbsp;热门游戏</p> <span class="er">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="yi">换一批 </span>
+</div>
+</div>
+<div class="box2">
+    <div class="box1">
+        <img src="imgs/74b3a430-b4a9-4e4d-ad5e-8a1b7d66d505.jpg" alt="">
+        <h1>&nbsp;&nbsp;&nbsp;&nbsp;《故土》</h1>
+        <h5>网易自研VR，多人在线，开放世界，打造身临其境的“末日世界”探索之旅!</h5>
+        <span class="san">进入官网→</span>
+    </div>
+    <div class="box1">
+        <img src="imgs/f07aa73e-3c49-4afa-8c77-bac33756ca96.jpg" alt="">
+        <h1>&nbsp;&nbsp;&nbsp;&nbsp;《Sky光·遇》</h1>
+        <h5>知名游戏制作人陈星汉最新作品《Sky光·遇》，带你开启一段最暖心纯粹的冒险旅</h5>
+        <span class="san">进入官网→</span>
+    </div>
+    <div class="box1">
+        <img src="imgs/845c70c8-f29d-46f3-9225-b340e592426c.jpg" alt="">
+        <h1>&nbsp;&nbsp;&nbsp;&nbsp;《第五人格》</h1>
+        <h5>那些秘密，人类从未真正了解，也从未停止探寻。第五人格全新求生者咒术师震撼</h5>
+        <span class="san">进入官网→</span>
+    </div>
+    <div class="box1">
+        <img src="imgs/a0d8602f-92b6-49ca-b82d-5d55d71a1c6b.jpg" alt="">
+        <h1>&nbsp;&nbsp;&nbsp;&nbsp;《新大话西游3》</h1>
+        <h5>开局一条狗，装备全靠捡，跨服千人，激情混战！更有变身玩法，体验躲猫猫的乐</h5>
+        <span class="san">进入官网→</span>
+    </div>
+    <div class="box1">
+        <img src="imgs/31dfe21c-6437-4861-93e7-0a9ad4d7f238.jpg" alt="">
+        <h1>&nbsp;&nbsp;&nbsp;&nbsp;《大唐无双》</h1>
+        <h5>首个双武器英雄职业风华惊艳登场，赛季2.0版热血来袭，低保福利再升级，全民保</h5>
+        <span class="san">进入官网→</span>
+    </div>
+    <div class="box1">
+        <img src="imgs/3b5b0abf-bb93-45d5-9f80-5ced916d2470.jpg" alt="">
+        <h1>&nbsp;&nbsp;&nbsp;&nbsp;《逗斗火柴人》</h1>
+        <h5>网易正版爆笑友尽竞技手游，安卓二次精英限量测试开启！</h5>
+        <span class="san">进入官网→</span>
+    </div>
+</div>
+<div class="boxys">
+    <p>&nbsp;&nbsp;&nbsp;新游测试</p>
+</div>
+<div class="box3">
+    <div class="box4">
+    <ul>
+        <li><img class="ones" src="imgs/8015d093-3bf7-43da-8bbb-2c530ef5034a.png" alt="" width="68" height="68"></li>
+        <li><h2 style="display: inline-block">青璃</h2>
+            <h3>iOS首测</h3>
+            <h3 style="padding-top: 7px"><span class="si">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;&nbsp;2月28日</h3></li>
+        <li class="dui">&nbsp;&nbsp;&nbsp;&nbsp;</li>
+    </ul>
+</div>
+    <div class="box4">
+        <ul>
+            <li><img src="imgs/bea23728-1b42-4eaf-a8f9-d432d9bd9554.png" alt="" width="68" height="68"></li>
+            <li><h2 style="display: inline-block">梦幻西游</h2>
+                <h3>双平台删档测试</h3>
+                <h3 style="padding-top: 7px"><span class="si">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;&nbsp;3月20日</h3></li>
+            <li class="dui">&nbsp;&nbsp;&nbsp;&nbsp;</li>
+        </ul>
+    </div>
+    <div class="box4">
+        <ul>
+            <li>
+                <img src="imgs/e25b24ae-8ff5-42e5-8a35-68c13ef4b723.png" alt="" width="68" height="68"></li>
+            <li><h2 style="display: inline-block">无限战车</h2>
+                <h3>小规模技术封测</h3>
+                <h3 style="padding-top: 7px"><span class="si">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;&nbsp;12月29日</h3></li>
+            <li class="dui">&nbsp;&nbsp;&nbsp;&nbsp;</li>
+        </ul>
+    </div>
+    <div class="box4">
+        <ul>
+            <li><img src="imgs/2a60ef57-cc3d-4fe9-8b9b-766f38a76d33.png" alt="" width="68" height="68"></li>
+            <li><h2 style="display: inline-block">权利与纷争</h2>
+                <h3>iOS上线</h3>
+                <h3 style="padding-top: 7px"><span class="si">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;&nbsp;2月28日</h3></li>
+            <li class="dui">&nbsp;&nbsp;&nbsp;&nbsp;</li>
+        </ul>
+    </div>
+    <div class="box4">
+    <ul>
+        <li><img src="imgs/8015d093-3bf7-43da-8bbb-2c530ef5034a.png" alt="" width="68" height="68"></li>
+        <li><h2 style="display: inline-block">风暴对决</h2>
+            <h3>iOS先锋测试</h3>
+            <h3 style="padding-top: 7px"><span class="si">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;&nbsp;2月28日</h3></li>
+        <li class="dui">&nbsp;&nbsp;&nbsp;&nbsp;</li>
+    </ul>
+
+
+
+
+</div></div>
+<div class="box5">
+    <!--<img class="one" src="imgs/2455101e-9bb5-4071-9c49-34907b98b287.png" alt="">-->
+</div>
+<div class="box6">
+    <!--<img class="one" src="imgs/2455101e-9bb5-4071-9c49-34907b98b287.png" alt="">-->
+</div>
+<div class="box7">
+    <!--<img class="one" src="imgs/2455101e-9bb5-4071-9c49-34907b98b287.png" alt="">-->
+</div>
+<div class="box8">
+    <!--<img class="one" src="imgs/2455101e-9bb5-4071-9c49-34907b98b287.png" alt="">-->
+</div>
+<div class="box9">
+    <!--<img class="one" src="imgs/2455101e-9bb5-4071-9c49-34907b98b287.png" alt="">-->
+</div>
+<div class="box10">
+    <!--<img class="one" src="imgs/2455101e-9bb5-4071-9c49-34907b98b287.png" alt="">-->
+</div>
+
+</body>
+</html>
